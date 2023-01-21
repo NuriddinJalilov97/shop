@@ -4,3 +4,46 @@ protected/runtime/*
 !protected/runtime/.gitignore
 protected/data/*.db
 themes/classic/views/
+
+# yii console commands
+/yii
+/yii_test
+/yii_test.bat
+
+# phpstorm project files
+.idea
+
+
+# windows thumbnail cache
+Thumbs.db
+
+# upload file dir
+/uploads
+
+# composer vendor dir
+/vendor
+
+# composer itself is not needed
+composer.phar
+composer.lock
+
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+# vagrant runtime
+/.vagrant
+frontend/web/assets/
+/_gsdata_/
+/frontend.zip
+/sync.ffs_db
+/log/
+/frontend/runtime/
+/backend/runtime/
+/backend/web/assets/
+/console/runtime/
+/backend/runtime/debug/
+/frontend/runtime/debug/
+/api/runtime/
