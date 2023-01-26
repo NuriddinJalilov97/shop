@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/../../common/helpers/helpers.php';
 $params = array_merge(
     require __DIR__ . '/../../common/config/params.php',
     require __DIR__ . '/../../common/config/params-local.php',
@@ -27,6 +28,9 @@ return [
             // this is the name of the session cookie used for login on the frontend
             'name' => 'advanced-frontend',
         ],
+        'cache' => [
+            'class' => 'yii\caching\FileCache',
+        ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
@@ -45,6 +49,7 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'category/<id:\d+>' => '<category/view>'
             ],
         ],
 
